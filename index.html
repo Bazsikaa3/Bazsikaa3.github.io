@@ -3,69 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bazsikaa3 Portfólió</title>
+    <title>WSS Klón - Hungarian RolePlay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Ez itt a CSS rész */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a; /* Mélykék háttér */
-            color: #f8fafc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 100%);
         }
-
-        .profile-card {
-            background: #1e293b;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            text-align: center;
-            border: 1px solid #334155;
-            transition: transform 0.3s ease;
-        }
-
-        .profile-card:hover {
-            transform: translateY(-10px); /* Kicsit megemelkedik, ha rátartod az egeret */
-        }
-
-        h1 {
-            color: #38bdf8; /* Világoskék cím */
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            color: #94a3b8;
-            font-size: 1.1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 10px 25px;
-            background-color: #38bdf8;
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #7dd3fc;
+        .card-blur {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
-<body>
+<body class="bg-[#0f172a] text-white">
 
-    <div class="profile-card">
-        <h1>Bazsikaa3</h1>
-        <p>Junior Fejlesztő & GitHub Mágus</p>
-        <p>Ez az első profi CSS designom!</p>
-        <a href="https://github.com/Bazsikaa3" class="btn">GitHub Profilom</a>
-    </div>
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter">WSS <span class="text-blue-500">STUDIOS</span></div>
+        <div class="space-x-6 hidden md:flex text-gray-300">
+            <a href="#" class="hover:text-white transition">Főoldal</a>
+            <a href="#" class="hover:text-white transition">Statisztikák</a>
+            <a href="#" class="hover:text-white transition">Közösség</a>
+        </div>
+        <a href="#" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full font-semibold transition">Bejelentkezés</a>
+    </nav>
+
+    <header class="hero-gradient py-24 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">WSS Studios</h1>
+            <p class="text-xl text-gray-300 mb-10 leading-relaxed">
+                Lépj be egy valósághű szerepjátékba, ahol a város élete csak rád vár! 
+                Fejlett rendszerek és egyedi lehetőségek a Roblox platformon.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-bold text-lg transition">Csatlakozás most</button>
+                <button class="bg-gray-800 hover:bg-gray-700 px-8 py-3 rounded-lg font-bold text-lg transition border border-gray-700">Discord</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto py-20 px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-bold text-blue-500">25+</div>
+                <div class="text-gray-400">Aktív játékos</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-blue-500">3100+</div>
+                <div class="text-gray-400">Regisztrált tag</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-blue-500">1</div>
+                <div class="text-gray-400">Szerverek száma</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-blue-500">47k</div>
+                <div class="text-gray-400">Látogatás</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-20 px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Miért válassz minket?</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-blur p-8 rounded-2xl">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-500 text-2xl font-bold">1</div>
+                <h3 class="text-xl font-bold mb-4">RolePlay Élmény</h3>
+                <p class="text-gray-400">Részletesen kidolgozott magyar roleplay világ a Robloxon, magyar szabályokra építve.</p>
+            </div>
+            <div class="card-blur p-8 rounded-2xl">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-500 text-2xl font-bold">2</div>
+                <h3 class="text-xl font-bold mb-4">Közösség</h3>
+                <p class="text-gray-400">Aktív és barátságos Discord közösség, ahol mindig találsz társat a játékhoz.</p>
+            </div>
+            <div class="card-blur p-8 rounded-2xl">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-500 text-2xl font-bold">3</div>
+                <h3 class="text-xl font-bold mb-4">Staff Rendszer</h3>
+                <p class="text-gray-400">Professzionális admincsapat és átlátható duty rendszer biztosítja a fair playt.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 mt-20 py-10 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <p>© 2024 WSS Studios. Minden jog fenntartva.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white">Discord</a>
+                <a href="#" class="hover:text-white">Roblox</a>
+                <a href="#" class="hover:text-white">YouTube</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
